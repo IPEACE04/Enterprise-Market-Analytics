@@ -17,7 +17,6 @@ st.set_page_config(page_title="Enterprise Equity Analytics", layout="wide", page
 
 st.title("Enterprise Equity Analytics Dashboard")
 st.markdown("""
-This dashboard showcases a full-stack Data Analytics pipeline designed for production scale:
 **Data Extraction (yfinance)  Quality Control , SQL Data Warehouse , Analytics Engine , Interactive UI**
 """)
 
@@ -56,8 +55,8 @@ for i, row in stats.iterrows():
         
 st.markdown("""
 <div style="font-size: 0.8em; color: gray;">
-* <b>Annual Return</b>: Expected yearly return based on historical data.<br>
-* <b>Sharpe Ratio</b>: Risk-adjusted return. >1 is good, >2 is very good.
+ <b>Annual Return</b>: Expected yearly return based on historical data.<br>
+ <b>Sharpe Ratio</b>: Risk-adjusted return. >1 is good, >2 is very good.
 </div>
 """, unsafe_allow_html=True)
 
