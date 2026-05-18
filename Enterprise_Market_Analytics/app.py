@@ -86,7 +86,6 @@ st.plotly_chart(fig, width='stretch')
 
 
 st.header("Predictive Analytics: Monte Carlo Simulation")
-st.markdown(f"Simulating 100 possible future price paths for **{selected_ticker}** over the next 30 trading days based on historical volatility and drift.")
 
 col1, col2 = st.columns([1, 4])
 with col1:
@@ -110,7 +109,6 @@ with col2:
 
 
 st.header("Asset Correlation Matrix")
-st.markdown("Understanding how assets move in relation to each other is crucial for portfolio diversification.")
 corr = returns.corr()
 fig_corr = px.imshow(corr, text_auto=".2f", color_continuous_scale='RdBu_r', aspect="auto")
 st.plotly_chart(fig_corr, width='stretch')
